@@ -13,10 +13,10 @@
 }
 
 .myWeather {
-  font-family: "Trirong", serif;
-  background-image: linear-gradient(#ebe645, #ebe645, #40a8c4, #a2d5f2);
+  font-family: "Lustria", serif;
+  background-image: linear-gradient(#40a8c4, #a2d5f2, #e8f0f2);
   border-radius: 16px;
-  box-shadow: 5px 5px 30px;
+  box-shadow: 5px 8px 15px #1354d6;
   padding: 40px;
   color: #1b1b1b;
 }
@@ -27,20 +27,20 @@
   padding: 30px 40px;
   display: inline-block;
   border-radius: 30px;
-
+  font-weight: bold;
   font-size: 16px;
   height: 50px;
   line-height: 20px;
 }
 .enter-city:focus {
-  color: #303133;
+  color: #1354d6;
   background-color: #fff8f3;
 
   outline: 0;
   box-shadow: 2px 2px 8px 1px #1c6dd0;
 }
 #search-button {
-  background-color: #ff7560;
+  background-color: #fdb827;
   color: whitesmoke;
   border: none;
   font-weight: bold;
@@ -54,4 +54,21 @@
 #search-button:focus {
   outline: 0;
   box-shadow: 2px 2px 8px 1px #1c6dd0;
+}
+
+#current-weather.row {
+  margin-top: 65px;
+}
+
+ul {
+  list-style: none;
+}
+
+#link-to-git {
+  display: block;
+  margin: zero auto;
+  font-family: monospace;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }

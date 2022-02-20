@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Copse&family=Trirong:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lustria&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -33,7 +33,7 @@
                   class="enter-city"
                 />
               </div>
-              <div class="col">
+              <div class="col-3">
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -44,9 +44,32 @@
               </div>
             </div>
           </form>
+          <div class="row" id="current-weather">
+            <div class="col-6">
+              <img src="src/sun.jpg " width="200px" />
+              <ul>
+                <li><span class="Weather-description">Sunny</span></li>
+                <li><span class="date-time">Date and time</span></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h1 id="city">City</h1>
+
+              <ul>
+                <li>Humidity</li>
+                <li>Wind</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <span id="link-to-git">
+      <a href="https://github.com/Mirnula/my-weather-app-project" target="blank"
+        >Open-source code</a
+      >
+      by Mirna Brizic
+    </span>
     <script src="src/app.js"></script>
   </body>
 </html>
