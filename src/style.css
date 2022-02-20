@@ -1,8 +1,22 @@
-h1 {
-  color: blueviolet;
+.aroundApp {
+  max-width: 740px;
+  margin: 70px auto;
 }
 
-p {
-  color: darkred;
-  text-align: center;
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.myWeather {
+  font-family: "Capriola", sans-serif;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 5px 5px 30px;
+  padding: 40px;
+  color: #878787;
 }
