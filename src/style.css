@@ -40,7 +40,7 @@
   box-shadow: 2px 2px 8px 1px #1c6dd0;
 }
 #search-button {
-  background-color: #fdb827;
+  background-image: linear-gradient(#fff323, #ff5403);
   color: whitesmoke;
   border: none;
   font-weight: bold;
