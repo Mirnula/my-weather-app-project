@@ -64,6 +64,13 @@ ul {
   list-style: none;
 }
 
+.units {
+  position: relative;
+  top: -9px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
 #link-to-git {
   display: block;
   margin: zero auto;

@@ -16,14 +16,8 @@ let todayDate = document.querySelector(".date-time");
 
 todayDate.innerHTML = ` ${day}, ${hour}:${minutes} `;
 
-let apiKey = `0163abee892c1733e53a43b6a0e7908a`;
-let apiBeggining = `https://api.openweathermap.org/data/2.5/weather?`;
-let unit = `metric`;
-let city = "Zagreb";
-let apiUrl = `${apiBeggining}q=${city}&units=${unit}&appid=${apiKey}`;
-
 function displayTemperature(response) {
-  let temperatureNumber = document.querySelector("#temperature");
+  let temperatureNumber = document.querySelector(".temperature");
   temperatureNumber.innerHTML = Math.round(response.data.main.temp);
   let cityName = document.querySelector("#city");
   cityName.innerHTML = response.data.name;
@@ -40,4 +34,20 @@ function displayTemperature(response) {
   );
 }
 
-axios.get(apiUrl).then(displayTemperature);
+function search(city) {
+  let apiKey = `0163abee892c1733e53a43b6a0e7908a`;
+  let apiBeggining = `https://api.openweathermap.org/data/2.5/weather?`;
+  let unit = `metric`;
+  let apiUrl = `${apiBeggining}q=${city}&units=${unit}&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+search("Zagreb");
+
+function searchCity(event) {
+  event.preventDefault();
+  let enterCity = document.querySelector("#city-input");
+  search(enterCity.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", searchCity);

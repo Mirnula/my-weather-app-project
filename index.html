@@ -25,13 +25,14 @@
     <div class="aroundApp">
       <div class="container">
         <div class="myWeather">
-          <form>
+          <form id="search-form">
             <div class="row">
               <div class="col-9">
                 <input
-                  type="text"
+                  type="search"
                   placeholder="Enter a city"
                   class="enter-city"
+                  id="city-input"
                 />
               </div>
               <div class="col-3">
@@ -55,7 +56,11 @@
             </div>
             <div class="col-6">
               <h1 id="city"></h1>
-              <h2 id="temperature"></h2>
+              <h2>
+                <span class="temperature"> </span>
+
+                <span class="units"> °C </span>
+              </h2>
 
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
