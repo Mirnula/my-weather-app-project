@@ -14,9 +14,13 @@
 
 .myWeather {
   font-family: "Lustria", serif;
-  background-image: linear-gradient(#40a8c4, #a2d5f2, #e8f0f2);
+  background-image: url("sky.jpg");
+  height: 701px;
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 1px 7px 25px #548cff;
   border-radius: 16px;
-  box-shadow: 5px 8px 15px #1354d6;
   padding: 40px;
   color: #1b1b1b;
 }
@@ -40,7 +44,7 @@
   box-shadow: 2px 2px 8px 1px #1c6dd0;
 }
 #search-button {
-  background-image: linear-gradient(#fff323, #ff5403);
+  background-image: linear-gradient(#fdeff4, #ffc0d3, #ffbed8, #ff7ba9);
   color: whitesmoke;
   border: none;
   font-weight: bold;
