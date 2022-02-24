@@ -13,20 +13,26 @@
 }
 
 .myWeather {
-  font-family: "Lustria", serif;
-  background-image: url("sky.jpg");
+  font-family: "Mitr", sans-serif;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("sky-sun.jpg");
   height: 701px;
-  background-position: bottom;
+  background-position: inherit;
   background-size: cover;
+
   border-radius: 15px;
-  box-shadow: 1px 7px 25px #548cff;
+  box-shadow: 6px 8px 40px #398ab9;
   border-radius: 16px;
   padding: 40px;
-  color: #1b1b1b;
+  color: #1c658c;
 }
 
 .enter-city {
   background: #fff8f3;
+  color: #1c658c;
   border: none;
   padding: 30px 40px;
   display: inline-block;
@@ -37,15 +43,14 @@
   line-height: 20px;
 }
 .enter-city:focus {
-  color: #1354d6;
   background-color: #fff8f3;
-
+  color: #1c658c;
   outline: 0;
-  box-shadow: 2px 2px 8px 1px #1c6dd0;
+  box-shadow: 2px 2px 8px 1px #398ab9;
 }
 #search-button {
-  background-image: linear-gradient(#fdeff4, #ffc0d3, #ffbed8, #ff7ba9);
-  color: whitesmoke;
+  background-image: linear-gradient(#ffc0d3, #ffbed8, #ff7ba9);
+  color: #fff8f3;
   border: none;
   font-weight: bold;
   padding: 30px 30px;
@@ -61,20 +66,43 @@
 }
 
 #current-weather.row {
-  margin-top: 65px;
+  margin-top: 40px;
+  border: 1px solid #fff8f3;
+  border-radius: 4px;
+}
+.icon {
+  padding: 5px;
+  width: 150px;
 }
 
+.weather-description {
+  font-size: 20px;
+  font-weight: bold;
+}
+.date-time {
+  font-size: 20px;
+}
 ul {
   list-style: none;
 }
-
+#right-side {
+  margin-top: 35px;
+}
+.temperature {
+  font-size: 40px;
+}
 .units {
   position: relative;
-  top: -9px;
-  font-size: 18px;
+  top: -14px;
+  font-size: 21px;
   text-decoration: none;
 }
-
+.humid-wind {
+  position: relative;
+  top: 6px;
+  right: 32px;
+  font-size: 20px;
+}
 #link-to-git {
   display: block;
   margin: zero auto;
