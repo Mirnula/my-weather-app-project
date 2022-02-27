@@ -33,6 +33,7 @@
 .enter-city {
   background: #fff8f3;
   color: #1c658c;
+  font-family: "Roboto Mono", monospace;
   border: none;
   padding: 30px 40px;
   display: inline-block;
@@ -49,7 +50,8 @@
   box-shadow: 2px 2px 8px 1px #398ab9;
 }
 #search-button {
-  background-image: linear-gradient(#ffc0d3, #ffbed8, #ff7ba9);
+  background-image: linear-gradient(#ffbed8, #ff7ba9);
+  font-family: "Roboto Mono", monospace;
   color: #fff8f3;
   border: none;
   font-weight: bold;
@@ -102,6 +104,22 @@ ul {
   top: 6px;
   right: 32px;
   font-size: 20px;
+}
+
+.days-of-week {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.day-forecast {
+  opacity: 0.5;
+  font-size: 30px;
+}
+.temperature-forecast {
+  font-size: 25px;
+}
+.min-temp {
+  opacity: 0.5;
 }
 #link-to-git {
   display: block;
