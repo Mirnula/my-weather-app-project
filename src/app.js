@@ -36,11 +36,9 @@ function displayWeekWeather(response) {
         `  <div class="col-2">
        <div class="day-forecast">${formatDay(forecastDay.dt)}</div>
        <img
-       src="http://openweathermap.org/img/wn/${
-         forecastDay.weather[0].icon
-       }@2x.png"
+       src="src/icons/${forecastDay.weather[0].icon}.svg"
        class="image-weather"
-       width="40"
+       width="50"
        />
      <div class="temperature-forecast">
     <span class="max-temp"> ${Math.round(forecastDay.temp.max)}°</span>
@@ -74,10 +72,7 @@ function displayTemperature(response) {
   let wind = document.querySelector("#wind");
   wind.innerHTML = Math.round(response.data.wind.speed);
   let icon = document.querySelector(".icon");
-  icon.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
+  icon.setAttribute("src", `src/icons/${response.data.weather[0].icon}.svg`);
 
   getWeeklyForecast(response.data.coord);
 }

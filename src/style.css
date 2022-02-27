@@ -50,7 +50,7 @@
   box-shadow: 2px 2px 8px 1px #398ab9;
 }
 #search-button {
-  background-image: linear-gradient(#ffbed8, #ff7ba9);
+  background-image: linear-gradient(#398ab9, #ffbed8);
   font-family: "Roboto Mono", monospace;
   color: #fff8f3;
   border: none;
@@ -77,31 +77,29 @@
   width: 150px;
 }
 
-.weather-description {
+#weather-date {
   font-size: 20px;
-  font-weight: bold;
+  margin-bottom: 10px;
 }
-.date-time {
-  font-size: 20px;
-}
+
 ul {
   list-style: none;
 }
 #right-side {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 .temperature {
-  font-size: 40px;
+  font-size: 60px;
 }
 .units {
   position: relative;
-  top: -14px;
-  font-size: 21px;
+  top: -20px;
+  font-size: 29px;
   text-decoration: none;
 }
 .humid-wind {
   position: relative;
-  top: 6px;
+
   right: 32px;
   font-size: 20px;
 }
