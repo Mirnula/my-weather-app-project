@@ -74,6 +74,7 @@
 .icon {
   padding: 5px;
   width: 150px;
+  opacity: 0.8;
 }
 
 #weather-date {
@@ -115,6 +116,9 @@ ul {
 }
 .temperature-forecast {
   font-size: 25px;
+}
+.image-weather {
+  opacity: 0.8;
 }
 .min-temp {
   opacity: 0.5;
